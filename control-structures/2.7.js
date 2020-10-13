@@ -6,6 +6,14 @@
 
 const readlineSync = require("readline-sync");
 
-let n = parseInt(readlineSync.question('Please enter a number: '));
 
+let n = parseInt(readlineSync.question('Please enter a number: '));
+let sum = 0;
+
+for (let a = 1; a <= n; a += 1) {
+    m = parseInt(readlineSync.question('Please enter a number: '));
+    sum = sum + parseInt(m);
+} 
+
+console.log(sum); 
 
