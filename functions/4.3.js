@@ -5,9 +5,7 @@
 // Write a documentation for the multiRand(n) function.
 
 // Use that function to create a program that will ask the number of random numbers to generate then display that same number of random numbers.
-
-
-
+``
 const readlineSync = require("readline-sync");
 let n = readlineSync.question('How many random numbers do you want? : ');
 
@@ -15,7 +13,7 @@ function rand10() {
     return (Math.round(Math.random() * 10));
 } 
 
-let a = []; 
+let a = [];                             
 
 function multiRand(n) { 
     for (let i=1; i <= n; i++) {        // i is my counter, n is the input, as long as counter is less or equal than the input
